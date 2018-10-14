@@ -7,5 +7,24 @@ div{
     height: 200px;
     width: 300px;
     background-color: black;
-    border: 10px bisque;
+    /* border: 10px bisque; */
+    border-radius: 10px;
+    margin: 20px;
+}
+.border_two{
+    height: 200px;
+    width: 300px;
+    background-color: black;
+    border-right: 10px bisque;
+    margin: 20px;
+}
+.border_three{
+    height: 200px;
+    width: 300px;
+    background-color:yellow;
+    margin: 20px;
+    /* border-right: 10px bisque;
+     */
+     border-style: solid dashed groove dotted;
+     border-width: 10px 5px 15px 5px;
 }
