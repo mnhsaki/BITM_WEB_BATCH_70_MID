@@ -1,0 +1,11 @@
+div{
+    height: 200px;
+    width: 300px;
+    background-color: aliceblue;
+}
+.border{
+    height: 200px;
+    width: 300px;
+    background-color: black;
+    border: 10px bisque;
+}
