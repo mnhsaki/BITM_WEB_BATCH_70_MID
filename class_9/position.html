@@ -12,30 +12,34 @@
         }
         .one{
             background-color: #0066ff;
+            height: 200px;
         }
         .two{
             background-color: #339900;
             position: absolute;
             bottom: 0;
+            height: 200px;
         }
         .three{
             background-color: #cc00cc;
+            height: 200px;
         }
         .main{
             position: relative;
-            height: 200px;
+            height: 1200px;
             background-color: #009999;
         }
         .fixed{
            position: fixed;
+           right: 0;
         }
     </style>
 </head>
 <body>
-   <div class="fixed"></div>
-    <div class="main">
-		<div class="one common">One</div>
+   <div class="main">
+      <div class="one common">One</div>
 		<div class="two common">Two</div>
+      <div class="fixed common">Fixed Position</div>
 		<div class="three common">three</div>
     </div>
 </body>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lay Out</title>
+   <style>
+		*{
+			box-sizing: border-box;
+		}
+		.header{
+			background-color: aqua;
+			color: white;
+			padding: 15px;
+			border-radius: 5px;
+		}
+		.body::after{
+			contain: "";
+			clear: both;
+			display: table;
+		}
+		.column{
+			float: left;
+			padding: 15px;
+		}
+		.menu{
+			width: 25%;
+		}
+		.content{
+			width: 75%;
+		}
+		.menu ul{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+		.menu li{
+			padding: 8px;
+			margin-bottom: 15px;
+			background-color: brown;
+
+		}
+		.menu li:hover{
+			background-color: aquamarine;
+			color: white;
+		}
+		.footer{
+			background-color: aqua;
+			color: white;
+			padding: 15px;
+			border-radius: 5px;
+		}
+   </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Web Design Batch 70</h1>
+    </div>
+    <div class="body">
+        <div class="column menu">
+            <ul>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="">JS</a></li>
+                <li><a href="">Bootstarp</a></li>
+            </ul>
+        </div>
+        <div class="content column">
+            <h1>Web Design</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur officiis architecto iure, optio suscipit dolorem magnam quia veniam ullam recusandae est velit totam voluptatibus itaque blanditiis maiores amet harum quasi Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea incidunt id iure fugiat molestias eveniet repellat aliquam totam ex ducimus qui ad sequi odit velit, neque enim vel hic expedita?</p>
+        </div>
+    </div>
+    <div class="header">
+            <h1>Web Design Batch 70</h1>
+        </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu Bar</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(21, 209, 146);
+            width: 100px;
+            border: 1px solid black;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+        li{
+            border-bottom: 1px solid black;
+        }
+        }
+        li:last-child{
+            border-bottom: none;
+        }
+        li a{
+            display: block;
+            color: white;
+            padding: 7px 14px;
+            text-decoration: none;
+        }
+        li a:hover:not(.a){
+            background-color: rgb(46, 46, 97);
+        }
+        .a{
+            background-color: rgb(46, 46, 97);
+        }
+        img{
+            margin-left: 16%;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#" class="a">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Servicr</a></li>
+    </ul>
+    <img src="../img/img2.jpg" alt="Image">
+    <img src="../img/img2.jpg" alt="Image">
+    <img src="../img/img2.jpg" alt="Image">
+    <img src="../img/img2.jpg" alt="Image">
+</body>
+</html>
