@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Positiondiv</title>
+    <style>
+        .common{
+            font-size: 30px;
+            color: white;
+        }
+        .one{
+            background-color: #0066ff;
+        }
+        .two{
+            background-color: #339900;
+            position: absolute;
+            bottom: 0;
+        }
+        .three{
+            background-color: #cc00cc;
+        }
+        .main{
+            position: relative;
+            height: 200px;
+            background-color: #009999;
+        }
+        .fixed{
+           position: fixed;
+        }
+    </style>
+</head>
+<body>
+   <div class="fixed"></div>
+    <div class="main">
+		<div class="one common">One</div>
+		<div class="two common">Two</div>
+		<div class="three common">three</div>
+    </div>
+</body>
+</html>
