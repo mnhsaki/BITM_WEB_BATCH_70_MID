@@ -228,14 +228,14 @@
 	min-height: 350px;
 	width: 100%;
 }
-.testmonial_content {}
-.testmonial_content h2 {
+.courses_content {}
+.courses_content h2 {
 	color: #2F4052;
 	margin-top: 40px;
 	text-align: center;
 	font-size: 30px;
 }
-.testmonial_content p {
+.courses_content p {
 	color: #2F4052;
 	text-align: center;
 	margin-top: 20px;
@@ -243,12 +243,19 @@
 	margin-bottom: 30px;
 	width: 50%;
 }
-.tes_skill {}
-.singel_skill {
-	width: 33.33%;
+.tes_courses {}
+.singel_courses {
+	width: 25%;
+	border: 1px solid #D5D2D2;
+	border-radius: 5px;
+	padding: 6px;
+	-webkit-box-shadow: 3px 6px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 3px 6px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 3px 6px 5px 0px rgba(0,0,0,0.75);
+	margin: 10px;
 }
 .singel_con {
-	margin-left: 30px;
+	/*! margin-left: 2px; */
 	width: 80%;
 }
 .singel_con h3 {
@@ -264,10 +271,18 @@
 	text-align: justify;
 }
 
+
+.skilimg img{
+	width: 100%;
 }
-.skilimg {
-	width: 10%;
+
+.courcses_bottom_cont{
+
 }
+.courcses_bottom_cont p{
+
+}
+.courcses_bottom_cont a{
 
 }
 .contain_mid {
@@ -490,7 +505,7 @@
 }
 .footer{height: 60px;width: 100%;background-color: #f3f4f8;}
 .footer_menu_wrapper {width: 100%;margin-top: 14px;}
-.footer .footer_menu {width: 35%;}
+.footer .footer_menu {width: 40%;}
 .footer.footer_menu ul {
 	padding-top: 20px
 }
@@ -514,7 +529,7 @@
 	color: #596885;
 	margin-top: 8px;
 	font-size: 15px;
-	width: 25%;
+	width: 20%;
 	float: left;
 }
 
