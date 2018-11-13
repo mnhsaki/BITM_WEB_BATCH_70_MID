@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Lay out</title>
+    <style>
+
+        *{
+            margin:0;
+            padding: 0;
+        }
+        .header{
+            height: 100px;
+            width: 100%;
+            background-color: aquamarine;
+        }
+        .containt{
+            height: 400px;
+            width: 100%;
+        }
+        .containt_foot{
+            height: 100px;
+            width: 100%;
+        }
+        .con_left{
+            height: 400px;
+            width: 30%;
+            background-color: rgb(123, 209, 180);
+            float: left;
+        }
+        .con_right{
+            height: 400px;
+            width: 70%;
+            background-color: rgb(63, 156, 125);
+            float: left;
+        }
+        .foot_left{
+            height: 100px;
+            width: 30%;
+            background-color: rgb(95, 131, 119);
+            float: left;
+        }
+        .foot_right{
+            height: 100px;
+            width: 70%;
+            background-color: rgb(47, 102, 84);
+            float: left;
+        }
+        .button{
+            height: 100px;
+            width: 100%;
+            background-color: rgb(15, 209, 144);
+        }
+        .bwrapper{
+            margin-left: 34%;
+            padding-top: 3%;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="header" id="h">
+
+        </div>
+    </section>
+    <section>
+        <div class="containt">
+            <div class="con_left"></div>
+            <div class="con_right"></div>
+        </div>
+    </section>
+    <section>
+        <div class="containt_foot">
+            <div class="foot_left"></div>
+            <div class="foot_right"></div>
+        </div>
+    </section>
+    <section>
+        <div class="button">
+           <div class="bwrapper">
+            <button type="button" onclick="document.getElementsById('h').style.display='none'">Header</button>
+            <button type="button" onclick="document.getElementsByClassName('h').style.display='block'">Header</button>
+            <button class="btn">Containt</button>
+            <button class="btn">Containt Left</button>
+            <button class="btn">Containt Right</button>
+            <button class="btn">Footer Left</button>
+            <button class="btn">Footer Right</button>
+            <button class="btn">ALL</button>
+           </div>
+        </div>
+    </section>
+</body>
+</html>

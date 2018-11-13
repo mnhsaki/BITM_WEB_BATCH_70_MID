@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Media Queries</title>
+    <style>
+        .example{
+            padding: 20px;
+            color: #fff;
+        }
+        .gradient{
+            height: 200px;
+            background-color: red;
+            background-image: linear-gradient(to bottom right,blueviolet,red,green);
+            /* background-image: radial-gradient(circel, red ,oreng,olive); */
+            /* background-image: repeating-linear-gradient() */
+        }
+        .transition{
+            height: 100px;
+            width: 100px;
+            background: red;
+            -webkit-transition: 2s;
+            transition:width 2s, height 2s, transform 2s;
+            transition-delay: 1s;
+        }
+        .transition:hover{
+            width: 300px;
+            height: 300px;
+            transform: rotate(180deg);
+        }
+        .animation{
+            width: 100px;
+            height: 100px;
+            background: blueviolet;
+            position: relative;
+            -webkit-animation-name:A;
+            -webkit-animation-duration: 3s;
+            -webkit-animation-fill-mode: forwards;
+            animation-name: A;
+            animation-duration: 3s;
+            /* animation-fill-mode: forwards; */
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+
+        }
+        @-webkit-keyframes A{
+            /* from{top:0px;}
+            to{top:300px; background-color: green;} */
+            0%{background-color: yellow;left:0;top:0;}
+            25%{background-color: orange;left:200px;top:0;}
+            50%{background-color: orange;left:200px;top:200px;}
+            75%{background-color: orange;left:0px;top:200px;}
+            100%{background-color: orange;left:0px;top:0px;}
+        }
+        @media onliy screen and (max-width:600px){
+            .example{background:red;}
+        }
+        @media onliy screen and (min-width:600px){
+            .example{background:green;}
+        }
+        @media onliy screen and (min-width:768px){
+            .example{background:blue;}
+        }
+        @media onliy screen and (min-width:992px){
+            .example{background-color: blue;}
+        }
+        @media onliy screen and (min-width:1200px){
+            .example{background-color: olive;}
+        }
+        @media screen and (max-width: 600px) {
+            .example {
+                background-color: olive;
+            }
+
+    </style>
+</head>
+<body>
+<div class="animation"></div><br>
+<div class="transition"></div><br>
+    <div class="gradient">
+
+    </div>
+    <h2>Media Quiries</h2>
+    <p class="example">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam excepturi maxime tenetur error animi sapiente aliquid similique cum odio enim unde, mollitia ab vero inventore blanditiis sunt molestiae accusamus necessitatibus!</p>
+</body>
+</html>
