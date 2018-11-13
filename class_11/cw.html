@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DropDown Menu</title>
+    <style>
+        #primary_nav_warap{
+            margin-top: 15px;
+            width: 100%;
+        }
+        #primary_nav_warap ul{
+            list-style-type: none;
+            position: relative;
+            float: left;
+            margin: 0;
+            padding: 0;
+        }
+        #primary_nav_warap ul li{
+            position: relative;
+            float: left;
+            margin: 0;
+            padding: 0;
+        }
+        #primary_nav_warap ul li a{
+            display: block;
+            color: #000;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 32px;
+            padding: 0 15px;
+        }
+        #primary_nav_warap ul li a:hover{
+            background-color: #33ccff;
+        }
+        #primary_nav_warap ul ul{
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            padding: 0;
+        }
+        #primary_nav_warap ul li:hover > ul{
+            display: block;
+        }
+        #primary_nav_warap ul ul li{
+            float: none;
+            width: 150px;
+        }
+        #primary_nav_warap ul ul a{
+            line-height: 120%;
+            padding: 10px 15px;
+        }
+        #primary_nav_warap ul ul ul{
+            top: 0;
+            left: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav id="primary_nav_warap">
+        <ul>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Gallery</a>
+                <ul>
+                    <li><a href="#">Gallery 1</a></li>
+                    <li><a href="#">Gallery 2</a></li>
+                    <li><a href="#">Gallery 3</a>
+                        <ul>
+                            <li><a href="#">Gallery</a></li>
+                            <li><a href="#">Gallery</a></li>
+                                <ul>
+                                    <li><a href="#">Gallery</a></li>
+                                    <li><a href="#">Gallery</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">services</a>
+            </li>
+            <li><a href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>

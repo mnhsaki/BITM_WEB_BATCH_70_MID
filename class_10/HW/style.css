@@ -243,9 +243,9 @@
 	margin-bottom: 30px;
 	width: 50%;
 }
-.tes_courses {}
+.tes_courses {margin-left: 0%;}
 .singel_courses {
-	width: 25%;
+	width: 20%;
 	border: 1px solid #D5D2D2;
 	border-radius: 5px;
 	padding: 6px;
