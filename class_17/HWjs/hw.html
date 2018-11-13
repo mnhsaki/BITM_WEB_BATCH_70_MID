@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Homework November 11</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                background-color: rgb(223, 230, 230);
+            }
+            .hw1{
+               width: 30%;
+               float: left;
+               margin: 100px;
+            }
+            .hw2{
+               width: 30%;
+               float: left;
+               margin: 100px;
+            }
+        </style>
+    </head>
+    <body>
+       <h1 style="margin-left:40%;">Java script</h1>
+        <!--Part 01-->
+        <div class="hw1">
+            <legend><h2>HomeWork 01</h2></legend>
+            <p>
+                Name: <br/><input type="text" id="1" name="name" size="45" placeholder="Your Name" autofocus><br/><br/>
+                Address: <br/><!DOCTYPE html>
+                <html>
+                <body>
+                
+                <h2>JavaScript String Properties</h2>
+                
+                <p>The length property returns the length of a string:</p>
+                
+                <p id="demo"></p>
+                
+                <script>
+                var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+                document.getElementById("demo").innerHTML = txt.length;
+                </script>
+                
+                </body>
+                </html>
+                <input type="text" id="2" name="address" size="43" placeholder="Address"><br/><br/>
+                Comments:</br> <textarea name="message" id="3" row="20" cols="40" placeholder="Type here..."></textarea><br/><br/>
+                <button onclick="returnVal()">Submit</button>
+            </p>
+            <br/>
+            <hr/>
+            <p id="h1.1"></p>
+            <p id="h1.2"></p>
+            <p id="h1.3"></p>
+            <script>
+                function returnVal(){
+                    var x = document.getElementById("1").value;
+                    var y = document.getElementById("2").value;
+                    var z = document.getElementById("3").value;
+                    document.getElementById("h1.1").innerHTML = "Name: " + x;
+                    document.getElementById("h1.2").innerHTML = "Address: " + y;
+                    document.getElementById("h1.3").innerHTML = "Comments: " + z;
+                }
+            </script>
+        </div>
+
+        <!--Part 02-->
+        <div class="hw2">
+            <legend><h2>HomeWork 02</h2></legend>
+            <div>
+                <img src="https://www.trybuy.in/wp-content/uploads/2018/09/Exclusive-Black-Designer-Shirt.jpg" height="100">
+                <br/>
+                Quantity: <input type="number" id="10" name="quantity" size="10" value=""> * 150Tk
+            </div>
+
+            <div>
+                <img src="http://bikroay.com/pic/x/cache/big/files/bd/176/234de71520bf9c616642f50c02495627.jpg" height="100">
+                <br/>
+                Quantity: <input type="number" id="11" name="quantity" size="10" value=""> * 100Tk
+            </div>
+            <br/>
+            <button onclick="cart()">Submit</button>
+
+            <div>
+                <hr/>
+                <p id="h2.11"></p>
+                <p id="h2.12"></p>
+                <hr/>
+                <p id="h2.2"></p>
+                <script>
+                function cart(){
+                    var x, y, b, w, sum;
+                    b = document.getElementById("10").value
+                    x = b * 150;
+                    //b = (+b)*150;
+                    w = document.getElementById("11").value
+                    y = w * 100;
+                    //w = (+w)*100;
+                    sum = x + y;
+
+                    document.getElementById("h2.11").innerHTML =
+                            "Price of Black T-shirt(s): " + x + "Tk.";
+                    document.getElementById("h2.12").innerHTML =
+                            "Price of White T-shirt(s): " + y + "Tk.";
+                    document.getElementById("h2.2").innerHTML =
+                            "Total Price: " + sum + "Tk.";
+                }
+            </script>
+            </div>
+        </div>
+    </body>
+</html>
