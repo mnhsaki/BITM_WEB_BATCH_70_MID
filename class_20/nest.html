@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="msg"></p>
+
+<script>
+  // Set variables
+  var i = 1;
+  var output = "";
+
+  // Outer loop
+  while (i <= 10) {
+
+      output += "<h1>" + i + " times table</h1>";
+      output += "<ul>";
+
+        // Inner loop
+        var j = 1;
+        while (j <= 10) {
+          output += "<li>" + j + " x " + i + " = " + j * i;
+          j++;
+      }
+          i++;
+
+      output += "</ul>";
+
+  }
+
+  // Output results to the above HTML element
+  document.getElementById("msg").innerHTML = output;
+</script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="msg"></p>
+
+<script>
+  // Set variables
+  var myBankBalance = 0;
+  var output = "";
+
+  // The loop
+  do {
+    output += "My bank balance is now $" + myBankBalance + "<br>";
+    myBankBalance ++;
+  }
+  while (myBankBalance <= 10);
+
+  // Output results to the above HTML element
+  document.getElementById("msg").innerHTML = output;
+</script>
+
+</body>
+</html>
