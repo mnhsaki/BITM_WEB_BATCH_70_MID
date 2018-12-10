@@ -5,6 +5,7 @@
 <!--[if gt IE 8]><!-->
 <html class="no-js">
 <!--<![endif]-->
+
 <head>
    <meta charset="utf-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,12 +30,16 @@
    }
    .modal-content {
 	background-color: #000;
-}
-.form-horizontal .form-group {
-	color: red;
-}
+   }
+   .form-horizontal .form-group {
+      color: red;
+   }
+   .navbar-inverse .navbar-nav > li > a {
+      color: red;
+   }
    </style>
 </head>
+
 <body>
    <!--[if lt IE 7]>
          <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
@@ -43,7 +48,7 @@
    <nav class="nabbar navbar-inverse">
       <div class="container-fluid">
          <div class="navbar-header">
-            <a href="#" class="navbar-brand">Saki</a>
+            <a href="#" class="navbar-brand" style="color:#fc0000;">Saki</a>
          </div>
          <ul class="nav navbar-nav">
             <li><a href="#">Home</a></li>
@@ -228,4 +233,5 @@
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
       crossorigin="anonymous"></script>
 </body>
+
 </html>
