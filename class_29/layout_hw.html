@@ -5,7 +5,6 @@
 <!--[if gt IE 8]><!-->
 <html class="no-js">
 <!--<![endif]-->
-
 <head>
    <meta charset="utf-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,22 +19,31 @@
       .navbar {
          border-radius: 0px;
       }
-
       body {
-         background-color: black;
+         /* background-color: black; */
+         background-image: url("https://4kwallpaper.org/wp-content/uploads/2016/12/gif-wallpaper3.gif");
       }
+      .thumbnail {
+	background-color: #fc0000;
+	border: 1px solid #fc0000;
+   }
+   .modal-content {
+	background-color: #000;
+}
+.form-horizontal .form-group {
+	color: red;
+}
    </style>
 </head>
-
 <body>
    <!--[if lt IE 7]>
          <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
       <![endif]-->
    <!-- NavBar Start -->
-   <nav class="navbar navbar-inverse">
+   <nav class="nabbar navbar-inverse">
       <div class="container-fluid">
          <div class="navbar-header">
-            <a class="navbar-brand" href="#">Saki</a>
+            <a href="#" class="navbar-brand">Saki</a>
          </div>
          <ul class="nav navbar-nav">
             <li><a href="#">Home</a></li>
@@ -50,51 +58,91 @@
                   <li><a href="#">BOOTSTRAP</a></li>
                </ul>
             </li>
-            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"> Service <span class="caret"></span></a>
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"> Demo <span class="caret"></span></a>
                <ul class="dropdown-menu">
-                  <li><a href="#">Web Design</a></li>
-                  <li><a href="#">Web Development</a></li>
-                  <li><a href="#">SEO</a></li>
-                  <li><a href="#">Digital Marketing</a></li>
+                  <li><a href="#">HTML</a></li>
+                  <li><a href="#">CSS</a></li>
+                  <li><a href="#">JAVA SCRIPT</a></li>
+                  <li><a href="#">BOOTSTRAP</a></li>
                </ul>
             </li>
          </ul>
          <ul class="nav navbar-nav navbar-right">
-            <li>
-               <a href="#">
-                  <span class="glyphicon glyphicon-user"></span>
-                  Sign Up
-               </a>
-            </li>
-            <li>
-               <a href="#modal" data-toggle="modal">
-                  <span class="glyphicon glyphicon-log-out"></span>
-                  Log In
-               </a>
-            </li>
+            <li><a href="#modal" data-toggle="modal"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Log In</a></li>
          </ul>
+         <form class="navbar-form navbar-right" action="/action.php">
+            <div class="input-group">
+               <input type='text' class='form-control' placeholder="Search Games">
+               <div class="input-group-btn">
+                  <button type='submit' class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
+               </div>
+            </div>
+         </form>
       </div>
    </nav>
-   <!-- NavBar End -->
-   <!-- Main Contain Start -->
+   <div class="modal fade" id="modal" role="dialog">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal">&times;</button>
+               <h4 class="modal-title" style="color: red;">Login</h4>
+            </div>
+            <div class="modal-body">
+               <form class="form-horizontal" action="/action.php">
+                  <div class="form-group">
+                     <label for="email" class="control-label col-sm-2">Email:</label>
+                     <div class="col-sm-10">
+                        <input type="email" class="form-control" id="email" placeholder="your@email.com">
+                     </div>
+                  </div>
+                  <div class="form-group">
+                     <label for="pwd" class="control-label col-sm-2">Password:</label>
+                     <div class="col-sm-10">
+                        <input type="password" class="form-control" id="pwd" placeholder="**********">
+                     </div>
+                  </div>
+                  <div class="form-group">
+                     <div class="col-sm-offset-2 col-sm-10">
+                        <div class="checkbox">
+                           <label><input type="checkbox">Remember Me</label>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="form-group">
+                     <div class="col-sm-offset-2 col-sm-3">
+                        <button type="submit" class="btn btn-danger btn-block  " style="color:#000;"><i class="glyphicon glyphicon-screenshot"></i>
+                           Submit</button>
+                     </div>
+                  </div>
+               </form>
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+         </div>
+      </div>
+   </div>
    <div class="container">
       <!-- Section 1 Start -->
       <section>
-         <div class="row">
+         <div class="row" style="margin-top: 10px;">
             <div class="col-md-4">
                <a href="#" class="thumbnail">
-                  <img src="https://babeltechreviews.com/wp-content/uploads/2018/07/rendition1.img_.jpg" alt="" style="height:200px; width: 100%">
+                  <img src="https://awesomewallpapers.files.wordpress.com/2014/11/games_e284960004.jpg" alt="" style="height:200px; width: 100%">
                </a>
             </div>
             <!-- /thumbnail -->
             <div class="col-md-4">
                <a href="#" class="thumbnail">
-                  <img src="https://babeltechreviews.com/wp-content/uploads/2018/07/rendition1.img_.jpg" alt="" style="height:200px; width: 100%">
+                  <img src="https://4.bp.blogspot.com/-AfEoehYSavs/Umu1tOGHgCI/AAAAAAAAAwo/mAug6cr-G0Q/s1600/hd+game+wallpapers+1080p__002.jpg"
+                     alt="" style="height:200px; width: 100%">
                </a>
             </div><!-- /thumbnail -->
             <div class="col-md-4">
                <a href="#" class="thumbnail">
-                  <img src="https://babeltechreviews.com/wp-content/uploads/2018/07/rendition1.img_.jpg" alt="" style="height:200px; width: 100%">
+                  <img src="https://gamingcentral.in/wp-content/uploads/2013/12/games_of_2013_wallpaper_by_sakis25_by_sakis25-d5m89m5.jpg"
+                     alt="" style="height:200px; width: 100%">
                </a>
             </div><!-- /thumbnail -->
          </div>
@@ -107,26 +155,27 @@
             <div class="col-md-8">
                <div class="col-md-12">
                   <a href="#" class="thumbnail">
-                     <img src="https://babeltechreviews.com/wp-content/uploads/2018/07/rendition1.img_.jpg" alt=""
-                        style="height:200px; width: 100%">
+                     <img src="http://www.gamingrespawn.com/wp-content/uploads/2016/09/games_artwork_warcraft_82280_2560x1440.jpg"
+                        alt="" style="height:321px; width: 100%">
                   </a>
                </div><!-- /thumbnail -->
                <div class="col-md-6">
                   <a href="#" class="thumbnail">
-                     <img src="https://babeltechreviews.com/wp-content/uploads/2018/07/rendition1.img_.jpg" alt=""
-                        style="height:200px; width: 100%">
+                     <img src="https://i.kinja-img.com/gawker-media/image/upload/t_original/1359563471926476945.jpg"
+                        alt="" style="height:200px; width: 100%">
                   </a>
                </div><!-- /thumbnail -->
                <div class="col-md-6">
                   <a href="#" class="thumbnail">
-                     <img src="https://babeltechreviews.com/wp-content/uploads/2018/07/rendition1.img_.jpg" alt=""
-                        style="height:200px; width: 100%">
+                     <img src="http://teehunter.com/wp-content/uploads/2017/02/3012244-biggest-gaming-anniversaries-of-2016-promo.jpg"
+                        alt="" style="height:200px; width: 100%">
                   </a>
                </div>
             </div>
             <div class="col-md-4">
                <a href="#" class="thumbnail">
-                  <img src="https://babeltechreviews.com/wp-content/uploads/2018/07/rendition1.img_.jpg" alt="" style="height:430px; width: 100%">
+                  <img src="https://www.technobuffalo.com/wp-content/uploads/2012/12/top-12-gaming-2012.jpg" alt=""
+                     style="height:551px; width: 100%">
                </a>
             </div><!-- /thumbnail -->
          </div><!-- /row -->
@@ -137,22 +186,23 @@
          <div class="row">
             <div class="col-md-3">
                <a href="#" class="thumbnail">
-                  <img src="https://babeltechreviews.com/wp-content/uploads/2018/07/rendition1.img_.jpg" alt="" style="height:200px; width: 100%">
+                  <img src="https://cdn.wallpapersafari.com/69/59/sj8xpC.jpg" alt="" style="height:200px; width: 100%">
                </a>
             </div><!-- /thumbnail -->
             <div class="col-md-3">
                <a href="#" class="thumbnail">
-                  <img src="https://babeltechreviews.com/wp-content/uploads/2018/07/rendition1.img_.jpg" alt="" style="height:200px; width: 100%">
+                  <img src="https://1.bp.blogspot.com/--WvzRkj56Qc/UNdCOxVn1QI/AAAAAAAAP3o/pIayJhI1Qgc/s1600/Battlefield+3+Game+Wallpapers+01.jpg"
+                     alt="" style="height:200px; width: 100%">
                </a>
             </div><!-- /thumbnail -->
             <div class="col-md-3">
                <a href="#" class="thumbnail">
-                  <img src="https://babeltechreviews.com/wp-content/uploads/2018/07/rendition1.img_.jpg" alt="" style="height:200px; width: 100%">
+                  <img src="http://wallpaperget.com/images/cool-gaming-wallpaper-32.jpg" alt="" style="height:200px; width: 100%">
                </a>
             </div><!-- /thumbnail -->
             <div class="col-md-3">
                <a href="#" class="thumbnail">
-                  <img src="https://babeltechreviews.com/wp-content/uploads/2018/07/rendition1.img_.jpg" alt="" style="height:200px; width: 100%">
+                  <img src="http://www.dasedesigns.com/wp-content/uploads/2017/04/DexxonPresentsShot.jpg" alt="" style="height:200px; width: 100%">
                </a>
             </div><!-- /thumbnail -->
          </div><!-- /row -->
@@ -163,7 +213,8 @@
          <div class="row">
             <div class="col-md-12">
                <a href="#" class="thumbnail">
-                  <img src="https://babeltechreviews.com/wp-content/uploads/2018/07/rendition1.img_.jpg" alt="" style="height:100px; width: 100%">
+                  <img src="https://www.ytgraphics.com/wp-content/uploads/2014/04/april-2014-games-ytg.jpg" alt=""
+                     style="height:100px; width: 100%">
                </a>
             </div><!-- /thumbnail -->
          </div>
@@ -171,12 +222,10 @@
       <!-- footer End -->
    </div>
    <!-- Main Contain End -->
-
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"></script>
    <!-- Latest compiled and minified JavaScript -->
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
       crossorigin="anonymous"></script>
 </body>
-
 </html>
