@@ -1,0 +1,140 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 1, 2018, 3:36:18 PM
+    Author     : Web Design
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ .col-1{width: 8.33%}
+ .col-2{width: 16.66%}
+ .col-3{width: 25%}
+ .col-4{width: 33.33%}
+ .col-5{width: 41.66%}
+ .col-6{width: 50%}
+ .col-7{width: 58.33%}
+ .col-8{width: 66.66%}
+ .col-9{width: 75%}
+ .col-10{width: 83.33%}
+ .col-11{width: 91.66%}
+ .col-12{width: 100%}
+ 
+ [class*='col-']{
+     float: left;
+     border: 1px solid black;
+ }
+ 
+ .row::before{
+     content: "";
+     clear: both;
+     display: block;
+ }
+ 
+ .wrapper{
+     width: 90%;
+     height: auto;
+     margin: auto;
+     background-color: #ccc;
+ }
+ 
+ @media screen and (max-width:500px){     
+     [class*='col-']{
+         width: 100%;
+     }
+ }
+ 
+ @media screen and (min-width:501px) and (max-width:780px){
+ .col-m1{width: 8.33%}
+ .col-m2{width: 16.66%}
+ .col-m3{width: 25%}
+ .col-m4{width: 33.33%}
+ .col-m5{width: 41.66%}
+ .col-m6{width: 50%}
+ .col-m7{width: 58.33%}
+ .col-m8{width: 66.66%}
+ .col-m9{width: 75%}
+ .col-m10{width: 83.33%}
+ .col-m11{width: 91.66%}
+ .col-m12{width: 100%}
+ }
+ 
+ .row_position{
+     position: relative;
+ } 
+ 
+ .add_position{
+     position: absolute;
+     top: 0;
+     right: 0;
+ }
+ 
+ @media screen and (min-width:781px) and (max-width:980px){
+ .col-l1{width: 8.33%}
+ .col-l2{width: 16.66%}
+ .col-l3{width: 25%}
+ .col-l4{width: 33.33%}
+ .col-l5{width: 41.66%}
+ .col-l6{width: 50%}
+ .col-l7{width: 58.33%}
+ .col-l8{width: 66.66%}
+ .col-l9{width: 75%}
+ .col-l10{width: 83.33%}
+ .col-l11{width: 91.66%}
+ .col-l12{width: 100%}
+ }
+ 
+ .box_one{
+     height: 200px;
+     width: 90%;
+     background-color: #0066ff;
+     margin: 5%;
+     box-shadow: 0px 0px 0px 5px gray;
+ }
+ 
+ .my_gradiant{
+     max-height: 650px;
+     width: 100%;
+     background-color: #00cc33;
+     font-size: 30px;
+     padding-top: 5px;
+     text-align: center;
+     cursor: pointer;
+     animation-name: bitm;
+     animation-duration: 3s;
+     animation-iteration-count: infinite;
+     overflow-y: scroll;
+ }
+ 
+ @keyframes bitm {
+     0% {background:linear-gradient(to bottom,black,silver,black)}
+     50% {background:linear-gradient(to top,red,silver,blue)}
+     100% {background:linear-gradient(to bottom,black,silver,black)}
+ }
+ 
+ .header_bottom_height{
+     height: 30px;
+ }
+ .header_top_height{
+     height: 200px;
+ }
+ .menu_height{
+     height: 50px;
+ }
+ .content_height{
+     height: 650px;
+ }
+ .big_footer_height{
+     height: 250px;
+ }
+ .footer_height{
+     height: 40px;
+ }
+ .custom_height{
+     height: 120px;
+ }

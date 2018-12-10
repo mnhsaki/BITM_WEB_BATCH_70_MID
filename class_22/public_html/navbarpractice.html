@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            
+            div{
+                height: 25px;
+                background-color: gray;
+            }
+            
+            nav:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            
+            #navbar ul,#navbar ul li {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                float: left;
+            }
+            
+            #navbar ul li {
+                position: relative;
+            }
+            #navbar ul ul {
+                display: none;
+            }
+            
+            #navbar ul li:hover > ul {
+                display: block;
+            }
+            
+            
+            #navbar ul ul li{
+                float: none;
+            }
+            #navbar ul li{
+                background-color: #0cc;
+                
+            }
+            #navbar ul li a {
+                display: block;
+                padding: 10px 40px;
+                color: white;
+                text-decoration: none;
+            }
+             
+            #navbar ul li:hover{
+                background-color: #A1A1A1;
+            }
+            #navbar ul > ul {
+                position: absolute;
+                top: 100%;
+                left: 0;
+            }
+            
+            #navbar ul ul ul{
+                position: absolute;
+                top: 0;
+                left: 100%;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div>TODO write content</div>
+        <div>TODO write content</div>
+        <div>TODO write content</div>
+        <nav id="navbar">
+            <ul>
+                <li><a href="">item1</a></li>
+                <li><a href="">item2</a>
+                  <ul>
+                      <li><a href="">item1</a></li>
+                      <li><a href="">item2</a>
+                        <ul>
+                            <li><a href="">item1</a></li>
+                            <li><a href="">item2</a></li>
+                            <li><a href="">item3</a>
+                             <ul>
+                                 <li><a href="">item1</a>
+                                   <ul>
+                                      <li><a href="">item1</a></li>
+                                      <li><a href="">item2</a>
+                                         <ul>
+                                      <li><a href="">item1</a></li>
+                                      <li><a href="">item2</a>
+                                        <ul>
+                                      <li><a href="">item1</a></li>
+                                      <li><a href="">item2</a></li>
+                                      <li><a href="">item3</a></li>
+                                      <li><a href="">item4</a></li>
+                                      <li><a href="">item5</a></li>
+                                  </ul>
+                                      </li>
+                                      <li><a href="">item3</a></li>
+                                      <li><a href="">item4</a></li>
+                                      <li><a href="">item5</a></li>
+                                  </ul>
+                                      </li>
+                                      <li><a href="">item3</a></li>
+                                      <li><a href="">item4</a></li>
+                                      <li><a href="">item5</a></li>
+                                  </ul>
+                                 </li>
+                                 <li><a href="">item2</a></li>
+                                 <li><a href="">item3</a></li>
+                                 <li><a href="">item4</a></li>
+                                 <li><a href="">item5</a></li>
+                             </ul>
+                            </li>
+                            <li><a href="">item4</a></li>
+                            <li><a href="">item5</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="">item3</a></li>
+                      <li><a href="">item4</a></li>
+                      <li><a href="">item5</a></li>
+                  </ul>
+                </li>
+                <li><a href="">item3</a>
+                 <ul>
+                     <li><a href="">item1</a></li>
+                     <li><a href="">item2</a></li>
+                     <li><a href="">item3</a></li>
+                     <li><a href="">item4</a>
+                       <ul>
+                           <li><a href="">item1</a></li>
+                           <li><a href="">item2</a></li>
+                           <li><a href="">item3</a></li>
+                           <li><a href="">item4</a></li>
+                           <li><a href="">item5</a></li>
+                       </ul>
+                     </li>
+                     <li><a href="">item5</a></li>
+                 </ul>
+                </li>
+                <li><a href="">item4</a></li>
+                <li><a href="">item5</a></li>
+            </ul>
+        </nav>
+    </body>
+</html>

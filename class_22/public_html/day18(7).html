@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form>
+            Name:
+            <input id="name" name="" type="text"><br/>
+            Address:
+            <input id="address" name="" type="text"><br/>
+            Contact:
+            <input id="contact" name="" type="text">
+        </form>
+        
+        <button onclick="myFunction()">Submit</button>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <script>
+            function myFunction()
+            {
+                var x = document.getElementById("name").value;
+                document.getElementById("demo1").innerHTML = "Your Name is " + x;
+                var y = document.getElementById("address").value;
+                document.getElementById("demo2").innerHTML = "Your Address is " + y;
+                var z = document.getElementById("contact").value;
+                document.getElementById("demo3").innerHTML = "Your Contact is " + z;
+            }
+        </script>
+    </body>
+</html>

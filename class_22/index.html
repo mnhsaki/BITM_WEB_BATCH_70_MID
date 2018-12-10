@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ClassWork Nov25</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .cw1{
+               width: 40%;
+               margin: 100px;
+            }
+            td{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="cw1">
+            <p>
+                First Name: <input type="text" id="in1" ><br/><br/>
+                Last Name: <input type="text" id="in2" ><br/><br/>
+                Full  Name: <input type="text" id="in3" ><br/><br/>
+            </p>
+            <hr/>
+            <table border="1" width="100%">
+                <tr>
+                    <th>
+                        Fast Name
+                    </th>
+                    <th>
+                        Last Name
+                    </th>
+                    <th>
+                        Full Name
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" id="out1" width="100%" disabled>
+                    </td>
+                    <td>
+                        <input type="text" id="out2" width="100%" disabled>
+                    </td>
+                    <td>
+                        <input type="text" id="out3" width="100%" disabled>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <script>
+                var x = document.getElementById("in1");
+                var y = document.getElementById("in2");
+                var z = document.getElementById("in3");
+
+                x.onkeyup = function(){
+                    document.getElementById('out1').innerHTML = x.value*2;
+                    var val1 = document.getElementById('in1').value
+                    document.getElementById('out1').value = val1;
+                }
+                
+                y.onkeyup = function(){
+                    document.getElementById('out2').innerHTML = y.value*2;
+                    var val2 = document.getElementById('in2').value
+                    document.getElementById('out2').value = val2;
+                }
+                
+                z.onkeyup = function(){
+                    document.getElementById('out3').innerHTML = z.value*2;
+                    var val3 = document.getElementById('in3').value
+                    document.getElementById('out3').value = val3;
+                }
+        </script>
+    </body>
+</html>

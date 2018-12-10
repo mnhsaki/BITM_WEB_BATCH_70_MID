@@ -1,0 +1,373 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 30, 2018, 4:31:48 PM
+    Author     : Web Design
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+.cf:after ,.cf:before{
+  content: "";
+  display: table;
+  clear: both;
+}
+body{
+    margin: 0 auto;
+}
+.header{
+    width:100%;
+    background-color: #1A1A1A;
+    height: auto;
+    margin-bottom: 30px;
+}
+.header2{
+  width: 100%;
+  border-bottom: 1px solid gray;
+}
+.head2, .head3{
+    width: 960px;
+    padding: 10px;
+    margin: 0 auto;
+    /*background-color: #77BDFC;*/
+}
+.head2 a{
+    color: gray;
+    text-decoration: none;
+    font-size:12px;
+    padding: 1px 10px;
+}
+.d3 h1{
+  font-size:50px;
+}
+.d5{
+  margin-left: 20px;
+}
+.d5 button{
+  border:1px solid gray;
+  padding: 20px 30px;
+  background-color: lightgreen;
+  border-radius:10px;
+}
+.d4 h3{
+  color: yellow;
+  font-size:12px;
+  font-weight:100;
+  margin: 10px 0 ;
+}
+.d4 button{
+  background-color: lightblue;
+  border: 1px solid gray;
+   padding: 5px 5px;
+}
+a{ text-decoration: none;color: white;}
+.d1,.d3{float: left;}
+.d2,.d4,.d5{float: right;text-align: right;}
+.nd{width: 80%;}
+#nav{
+    width: 960px;
+    margin: 0 auto;
+    background-color: #646464;
+    height: auto;
+}
+#nav ul,#nav li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+ 
+}
+nav{
+    padding: 0 10px 0 0; 
+    border-radius: 10px 10px 0 0;
+}
+/*#nav ul li {
+    display: inline-block;
+    color: #009999;
+    border-right: 1px solid black;
+}*/
+#nav ul li a{
+    display: block;
+    float: left;
+    padding: 8px 20px;
+    border-right: 1px solid black;
+    /*line-height: 80px;*/
+    background-color: #646464;
+}
+#nav ul li a.current{
+  background-color: #3D3D3D;
+  border-radius:10px 0 0 0;
+}
+#nav ul li a:hover{
+  background-color: #3D3D3D;
+}
+
+
+/*nav bar next div*/
+
+.car{
+    width: 920px;
+    height: auto;
+    background-color: #72A8E4;
+    margin: 0 auto 10px;
+    padding: 20px 20px;
+    border-radius:8px;
+}
+div.dcar1{
+  float:left;
+  /*width: 50%;*/
+  padding: 20px 20px;
+}
+.dcar1 img{
+  width: 400px;
+  height: 300px;
+}
+div.dcar2{
+  float: right;
+  width: 50%;
+  padding: 20px 0;
+}
+.dcar2 h1{
+  color: white;
+  font-weight:100;
+  font-size:40px;
+  margin-bottom: 10px;
+}
+.dcar2 p{
+  color: #333;
+  font-weight:100;
+  line-height: 1.2em;
+  margin-bottom: 10px;
+}
+.dcar2 span.whit{
+  color: white;
+  text-decoration: line-through;
+  font-size:16px;
+}
+.dcar2 button{
+  background-color: #F8E07C;
+  padding: 10px 20px;
+  color: black;
+  border-radius:5px;
+  border: 1px solid transparent;
+  box-shadow: 1px 1px 2px gray;
+  margin-top: 10px;
+}
+
+/*content one*/
+
+.cnt_one{
+    margin: 0 auto 20px;
+    width: 960px;
+}
+div.gl_one{
+   width: 270px;
+   height: auto;
+   margin-right: 10px;
+   float:left;
+   padding: 10px 20px;
+   border:1px solid gray;
+   border-radius: 5px;
+}
+div.gl_one:last-child{
+    margin-right: 0;
+}
+.gl_one img{
+    position: right bottom;
+    float:right;
+    width: 40%;
+    height: 80px;
+}
+.gl_one p{
+   font-size:12px;
+   color: gray;
+   /*word-spacing: .8em;*/
+   /*letter-spacing: .1em;*/
+   line-height: 1.4em;
+   margin-bottom: 15px;
+ }
+.gl_one button{
+    border: 1px solid gray;
+    box-shadow: 1px 1px 2px gray;
+    padding: 7px 20px;
+    border-radius: 5px;
+}
+.red{
+  background-color: #BB434C;
+}
+.green{
+  background-color: lightgreen;
+}
+.yellow{
+  background-color:lightyellow;
+}
+.blue{
+  background-color: lightblue;
+}
+.white2{
+  color: white;
+}
+.red2{
+  color: #BB434C;
+}
+.green2{
+  color: lightgreen;
+}
+.yellow2{
+  color:lightyellow;
+}
+.blue2{
+  color: lightblue;
+}
+.gray2{
+  color: gray;
+}
+/*separator*/
+
+.seprt{
+  width: 940px;
+  padding: 10px 0 10px 20px;
+  margin: 40px auto ;
+  border :1px solid black;
+  border-radius: 5px;
+  background-color: #F7F7F7;
+}
+.cnt_two,.cnt_three{
+    margin: 0 auto 20px;
+    width: 960px;
+}
+div.gl_two,div.gl_three{
+   width: 190px;
+   height: auto;
+   margin-right: 10px;
+   float:left;
+   padding: 20px 20px 40px;
+   border:1px solid gray;
+   border-radius: 5px;
+}
+div.gl_two:last-child,div.gl_three:last-child{
+    margin-right: 0;
+}
+.gl_two img,.gl_three img{
+    width: 100%;
+}
+.gl_two h3{
+  background-color: #333;
+  color: white;
+  width: 30px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  padding: 0 5px;
+  font-size: 12px;
+  font-weight: 100;
+}
+.gl_three h3{
+  background-color: red;
+  color: white;
+  width: 30px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  padding: 0 5px;
+  font-size: 12px;
+  font-weight: 100;
+  float: right;
+}
+.gl_two mark {
+  padding: 0 10px;
+  border-radius: 5px;
+}
+.gl_three mark {
+  color: red;
+  padding: 0 10px;
+  border-radius: 5px;
+}.gl_three mark span {
+  color: black;
+  text-decoration: line-through;
+}
+.gl_two h4,.gl_three h4 {
+  color: #5C87A9;
+  font-size:14px;
+  margin-top: 5px;
+}
+.gl_two p,.gl_three p  {
+ 
+  font-size:12px;
+  line-height: 1.2em;
+  margin-bottom: 10px;
+}
+.gl_two a,.gl_three a {
+  background-color: lightgreen;
+  color: white;
+  padding: 2px 10px;
+  border:1px solid gray;
+  border-radius:5px;
+  font-size: 12px;
+  font-weight: 100;
+  text-decoration: none;
+}
+a.rbor{
+  border-right: none;
+}
+.detl{
+  background-color: lightblue;
+  padding: 3px 10px;
+  border-radius:5px;
+  border:1px solid gray;
+}
+.cfootr{
+  width: 100%;
+  background-color: #1A1A1A;
+  border-bottom: 1px solid gray;
+}
+.footer{
+  width: 960px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+.footer div.fd1 {
+  float: left;
+  margin-right: 20px;
+  width: 160px;
+}
+.footer div ul,.footer div ul li{
+  list-style: none;
+}
+.footer div.fd4
+{
+  float:right;
+}
+.footer h2{
+  color: white;
+  font-size: 14px;
+  font-weight:100;
+  margin-bottom: 10px;
+}
+.footer .fd1 ul li a{
+  text-decoration: none;
+  color: gray;
+  font-size:12px;
+}
+input[type="search"] {
+  background-color: #1D1D1D;
+  border: 1px solid gray;
+  height: 30px;
+}
+.fd4 button{
+  background-color: yellow;
+  border: 1px solid gray;
+  padding: 5px 5px;
+}
+.cf2{
+  width: 100%;
+  background-color: #1D1D1D;
+}
+.footer2{
+  width: 960px;
+  padding: 10px 0;
+  margin: 0 auto;
+  color: gray;
+  font-size:12px;
+}

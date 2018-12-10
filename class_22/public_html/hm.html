@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+			.row {
+			width: 80%;
+			margin: 20px auto;
+		}
+		.row:before ,.row:after {
+			content: "";
+			display: table;
+		}
+		.row:after {
+			clear: both;
+		}
+		.row div {
+			box-sizing: border-box;
+			width: 33.33%;
+			height: 100%;
+			float: left;
+			padding: 20px;
+			min-height: 600px;			
+			text-align: center;
+
+		}
+	</style>
+</head>
+<body>
+	<div class="row">
+		<div class="product">
+			<img src="image/shirt.jpg" alt="pic">
+			<h4>product name:shirt</h4>
+			<h5>price <span>100</span> taka</h5>
+			<button onclick="incri();total()">add to cart</button>
+		</div>
+		<div class="product">
+			<img src="image/watch.jpg" alt="pic">
+			<h4>product name:watch</h4>
+			<h5>price <span>200</span> taka</h5>
+			<button onclick="incri2();total();">add to cart</button>
+		</div>
+		<div class="price">
+			<img src="image/shirt.jpg" alt=""> quantity: <span id="quan">0</span> . price: <span id="price">0</span> taka <br>
+			<img src="image/watch.jpg" alt=""> quantity: <span id="quan2">0</span> . price: <span id="price2">0</span> taka <br>
+			total : <span id="total">0</span>
+		</div>
+	</div>
+	<script>
+		var i = 0;
+		var j = 0;
+
+		function incri(){			
+			if (i != Infinity) {
+        i = i + 1;
+        document.getElementById("quan").innerHTML = i;
+        var x = document.getElementById("quan").innerHTML;
+        document.getElementById("price").innerHTML = x*100;
+		}}
+
+		function incri2(){
+			
+			if (j != Infinity) {
+        j = j + 1;
+        document.getElementById("quan2").innerHTML = j;
+        var x = document.getElementById("quan2").innerHTML;
+        document.getElementById("price2").innerHTML = x*300;
+		}}
+
+		function total(){
+		var x =	document.getElementById("price").innerHTML;
+		var y = document.getElementById("price2").innerHTML;
+		
+		var z = parseInt(x) + parseInt(y);
+		document.getElementById("total").innerHTML = z;
+		}
+	</script>
+</body>
+</html>

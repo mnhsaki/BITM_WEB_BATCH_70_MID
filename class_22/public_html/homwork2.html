@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>arrays</title>
+        <style>
+        	.demo {
+        		padding :10px;
+        		border:2px solid teal;
+        		list-style-position: inside;
+        		width: 200px;
+        		/*text-align: center;*/
+        	}
+
+        </style>
+    </head>
+<body>
+
+<h2>ARRAY</h2>
+
+<p>HOMEWORK</p>
+
+<p id="demo"></p>
+
+<input type="number" id="numinput" />
+<button onclick="myFunction()">Try it</button>
+<script>
+var i ;
+var output = "";
+// var numbstring = document.getElementById("numinput").value;
+// var numb = Number(numbstring);
+
+function myFunction(){
+	var numbstring = document.getElementById("numinput").value;
+	var numb = Number(numbstring);
+
+	output += "<ul class='demo'>";
+
+	for (i = 1; i <= 10;i++ ){   
+    	output += "<li>" + i + "x" + numb + "=" + i*numb;
+    }
+
+	output += "</ul>";
+
+	document.getElementById("demo").innerHTML = output;
+}
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,97 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 30, 2018, 4:31:48 PM
+    Author     : Web Design
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+.cf:after ,.cf:before{
+  content: "";
+  display: table;
+  clear: both;
+}
+body{
+    margin: 0 auto;
+}
+.header{
+    width:100%;
+    background-color: #333;
+    height: auto;
+    margin-bottom: 30px;
+}
+.head2, .head3{
+    width: 80%;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: #77BDFC;
+}
+a{ text-decoration: none;color: white;}
+.d1,.d3{float: left;}
+.d2,.d4{float: right;width: 50%;text-align: right;}
+.nd{width: 80%;}
+#nav{
+    width: 80%;
+    margin: 0 auto;
+    background-color: #1660E8;
+    height: auto;
+}
+#nav ul,#nav li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+ 
+}
+nav{
+    padding: 10px; /*without padding*/
+}
+#nav ul li {
+    display: inline-block;
+    color: #009999;
+    border-right: 1px solid black;
+}
+#nav ul li a{
+    padding: 10px 10px;
+    /*line-height: 80px;*/
+    background-color: #77BDFC;
+    
+}
+
+
+/*nav bar next div*/
+
+.car{
+    width: 80%;
+    height: 350px;
+    background-color: #258ED9;
+    margin: 0 auto 10px;
+    padding: 10px;
+}
+
+/*content one*/
+
+.cnt_one{
+    margin: 0 auto;
+    width: 80%;
+}
+div.gl_one{
+   width: 31%;
+   height: auto;
+   margin-right: 1%;
+   float:left;
+   padding: 10px 10px;
+   border:.09em solid gray;
+   border-radius: 5px;
+}
+div.gl_one:last-child{
+    margin-right: 0;
+}
+.gl_one img{
+    float:right;
+    width: 40%;
+}

@@ -1,0 +1,248 @@
+*{ margin: 0;
+	padding: 0;
+}
+
+.stable_width{
+	width: 1178px;
+	margin: 0 auto;
+	display: block;
+	overflow: hidden;
+}
+.header_area{
+	padding-top: 45px;
+}
+.header{}
+.logo{
+	width: 40%;
+	float: left;
+        background-color: #006666;
+}
+
+.nav{
+	width: 60%;
+	float: right;
+	
+}
+.nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	float: right;
+}
+.nav li{
+	float: left;
+
+}
+.nav li a:hover:not(.active){
+	background-image: linear-gradient(#6DFFC6, #3FD2CE);
+	border-radius: 5px 5px 5px 5px;
+	color: #fff;
+}
+.nav li a{
+	display: block;
+	text-align: center;
+	padding: 9px 18px;
+	text-decoration: none;
+	color: #727476;
+	font-family: "Roboto Regular", Sans-serif;
+}
+.active{
+	
+	background-image: linear-gradient(#6DFFC6, #3FD2CE);
+	border-radius: 5px 5px 5px 5px;
+	color:#fff;
+}
+.intro_area{
+	position: relative;
+	background: url(image/a34.png);
+	height: 500px;
+	margin-top: 30px;
+	margin-bottom: 87px
+}
+.intro{}
+.intro_caption {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.intro_caption h2{
+	font-family: "Roboto Light", Sans-serif;
+	font-size: 60px;
+	color: #fff;
+}
+.intro_btn{
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.btn{
+	background-image: linear-gradient(#FF6C54, #FF3558);
+	border-radius: 12px 12px 12px 12px;
+	border: none;
+	padding: 24px 51px;
+	font-size: 22px;
+	margin: 4px 2px;
+	cursor: pointer;
+	color: #fff;
+	font-family: "robot medium", sans-serif;
+	font-weight: 750;
+}
+.service_area{
+	position: relative;
+	margin-bottom: 200px;
+}
+.service-top{}
+.srvc{
+	float: left;
+	width: 25%;
+	margin-bottom: 50px;
+}
+.srvc img{   
+	align-items: center;
+	padding: 0px 78px 28px;
+}
+.srvc h2{
+	font-family: "robot medium", sans-serif;
+	font-size: 20px;
+	color: #4C4F50;
+	text-align: center;
+	padding-bottom: 54px;
+}
+.srvc p{
+	text-align: center;
+	color: #A1A8AD;
+	font-size: 18px;
+	font-family:"robot medium", sans-serif;
+}
+
+.service-bottm{
+	position: absolute;
+
+	left: 50%;
+	transform: translate(-50%, -50%);
+	bottom: -43%;
+}
+.brows_area{
+	position: relative;
+	background: url('image/browser.png') no-repeat center ;
+	height: 763px;
+}
+.brows{}
+.brows_cap {
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.brows_cap h1{
+	font-family: "Roboto Light", Sans-serif;
+	font-size: 45px;
+	color: #fff;
+	text-align: center;
+	font-weight: 500;
+}
+.brows_cap p{
+	text-align: center;
+	color: #fff;
+	font-size: 18px;
+	font-family:"robot medium", sans-serif;
+	padding-top: 50px;
+}
+.brows_image{}
+.mobile_area{
+	position: relative;
+	height: 572px;
+	padding-top: 60px;
+}
+.mobile{}
+.mobile-left{
+	float: left;
+	width: 50%;
+}
+.mobile-left img{
+	padding-left: 175px;
+}
+.mobile-right{
+	float: right;
+	width: 47%;
+}
+.mobile-right h1{
+	font-family: "Roboto Light", Sans-serif;
+	font-size: 45px;
+	color: #3F4244;
+	
+	font-weight: 500;
+	padding-bottom: 60px;
+}
+.mobile-right p{
+	text-align: justify;
+	color: #A1A8AD;
+	font-size: 18px;
+	font-family:"robot medium", sans-serif;
+}
+.mobile_btn{
+	position: absolute;
+	padding-top: 70px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+   @media only screen and (max-width: 500px) {
+                body{
+                    background-color: red;
+                }
+            }
+                  @media only screen and (min-width:500px) {
+                body {
+                    background-color:#6666ff;
+                }
+            }
+                @media only screen and (min-width:600px) {
+                body {
+                    background-color: #006666;
+                }
+            }
+            @media only screen and (min-width:700px) {
+                body {
+                    background-color: green;
+                }
+            }
+                @media only screen and (min-width:800px) {
+                body {
+                    background-color:#00cccc;
+                }
+            }
+            @media only screen and (min-width:900px) {
+                body {
+                    background-color: blueviolet;
+                }
+            }
+               @media only screen and (min-width:1000px) {
+                body {
+                    background-color: midnightblue;
+                }
+            }
+               @media only screen and (min-width:1100px) {
+                body {
+                    background-color: purple;
+                }
+            }
+               @media only screen and (min-width:1200px) {
+                body {
+                    background-color:#333300;
+                }
+            }
+           

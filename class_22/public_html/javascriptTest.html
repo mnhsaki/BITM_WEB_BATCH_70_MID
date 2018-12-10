@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Forms Api</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form> 
+            NAME <input type="text" name="" id="nam">
+            ADDRESS <input name="" id="adr">
+        CONTACT <input type="number" id="con">
+        <!--<button onclick="myFunction()">submit</button>-->
+          </form>
+        <button onclick="myFunction()">submit</button>
+      
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        
+
+<script>
+   var  x, y, z;
+  
+//      x = document.getElementById("nam").value;
+//      y = document.getElementById("adr").value;
+//      z = document.getElementById("con").value;
+   
+   function myFunction(){
+       x = document.getElementById("nam").value;
+       y = document.getElementById("adr").value;
+       z = document.getElementById("con").value;
+       document.getElementById("demo").innerHTML = "Your Name is " + x;
+       document.getElementById("demo1").innerHTML = "Your Name is " + y;
+       document.getElementById("demo2").innerHTML = "Your Name is " + z;
+   }
+</script>
+
+
+    </body>
+</html>

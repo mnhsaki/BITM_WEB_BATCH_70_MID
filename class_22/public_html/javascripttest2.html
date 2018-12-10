@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>arrays</title>
+    </head>
+<body>
+
+<h2>JavaScript Arrays</h2>
+
+<p>JavaScript array elements are accesses using numeric indexes (starting from 0).</p>
+
+<p id="demo"></p>
+
+<input type="number" id="num" />
+<button onclick="myFunction()">Try it</button>
+<script>
+var i ;
+var output = "";
+
+function myFunction(){
+    
+    var nmbString = document.getElementById("num").innerHTML;
+    var numb = Number(nmbString);
+    output += "<ul>";
+    for (i = 1; i <= 10;i++ )
+    {
+//    output += "<ul>";
+    output += "<li>" + i + "x" + numb + "=" + i*numb;
+
+//    output += "</ul>";
+    }
+  output += "</ul>";
+  document.getElementById("demo").innerHTML = output;
+}
+</script>
+
+</body>
+</html>
+

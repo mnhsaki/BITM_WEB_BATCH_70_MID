@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.row {
+			width: 80%;
+			margin: 20px auto;
+			background-color: #58584D;
+		}
+		.row:before ,.row:after {
+			content: "";
+			display: table;
+		}
+		.row:after {
+			clear: both;
+		}
+		.row div {
+			box-sizing: border-box;
+			width: 33.33%;
+			height: 100%;
+			float: left;
+			padding: 20px;
+			min-height: 600px;
+			border :1px solid #3A3F54;
+			background-color: #58584D;
+			text-align: center;
+
+		}
+		.product img {
+			width:100%;
+			height: 400px;
+		}
+		.price img {
+			width: 70px;
+			height: 60px;
+		}
+		button {
+			padding: 8px 20px;
+			border-radius: 10px 20px;
+			background-color: #253A4D;
+			border:2px solid;
+			border-top-color: #123;
+			border-bottom-color: #124;
+			color: #ccc;
+		}
+		h4{
+			color: #ddd;
+			font-family: cursive;
+			letter-spacing: 1px;
+		}
+		h5{
+			color: white;
+			font-weight: 700;
+			letter-spacing: 1px;
+		}
+		h5 span {
+			color: #FCEEAF;
+		}
+		.price p {
+			color: #eee;
+			letter-spacing: 1px;
+		}
+		#quan, #quan2, #price, #price2 {
+			color: #FCEEAF;
+			margin: 0 10px;
+		}
+		#total {
+			color: #B6F5FF;
+		}
+	</style>
+</head>
+<body>
+	<div class="row">
+		<div class="product">
+			<img src="image/shirt.jpg" alt="pic">
+			<h4>Product Name : Shirt</h4>
+			<h5>Price <span>100</span> taka</h5>
+			<button onclick="incri();total()">ADD TKart</button>
+		</div>
+		<div class="product">
+			<img src="image/watch.jpg" alt="pic">
+			<h4>Product Name : Watch</h4>
+			<h5>Price <span>200</span> taka</h5>
+			<button onclick="incri2();total();">ADD to Cart</button>
+		</div>
+		<div class="price">
+			<img src="image/shirt.jpg" alt=""> <p>Quantity : <span id="quan">0</span> / Price : <span id="price">0</span> TK</p>
+			<img src="image/watch.jpg" alt=""> <p>Quantity : <span id="quan2">0</span> / Price : <span id="price2">0</span> TK</p>
+			<p>TOTAL : <span id="total">0</span></p>
+		</div>
+	</div>
+	<script>
+		var i = 0;
+		var j = 0;
+		// var x = 100;
+		
+		function incri(){
+			
+			if (i != Infinity) {
+        i = i + 1;
+        document.getElementById("quan").innerHTML = i;
+        var x = document.getElementById("quan").innerHTML;
+        document.getElementById("price").innerHTML = x*100;
+		}}
+
+		function incri2(){
+			
+			if (j != Infinity) {
+        j = j + 1;
+        document.getElementById("quan2").innerHTML = j;
+        var x = document.getElementById("quan2").innerHTML;
+        document.getElementById("price2").innerHTML = x*300;
+		}}
+
+		function total(){
+		var x =	document.getElementById("price").innerHTML;
+		var y = document.getElementById("price2").innerHTML;
+		
+		// var z = parseInt(x) + parseInt(y);
+		var z = Number(x) + Number(y);
+		 // var z = x + y;
+		document.getElementById("total").innerHTML = z;
+		}
+		
+
+		// var y = document.getElementById("quan").innerHTML;
+		// y = y+1;
+		// document.getElementById("quan").innerHTML = y ;}
+		// var x = 100;
+		
+	// 	document.getElementById("price").innerHTML = x + 100 ;
+	// 	document.getElementById("quan").innerHTML.value = x;
+	// }
+		// function incri(){
+			
+		
+		// for ( var i = 1; i > 0; i++) {
+		// 	document.getElementById("quan").innerHTML = i ;
+		// }}
+		
+		// document.getElementById("price").innerHTML = x + 100;
+	</script>
+</body>
+</html>

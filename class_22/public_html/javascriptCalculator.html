@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            th, td {
+                /*padding: 5px 10px;*/
+                background-color: #444422;
+            }
+            input[type='button']{
+                color: white;
+                width: 100%;
+                background-color: #444422;
+                border: none;
+                font-weight: bold;
+            }
+            table{
+                width: 20%;
+            }
+            
+            table#tab1 {
+                padding: 0;
+                margin: 0;
+            }
+            #tab1 tr {
+                margin: 0;
+                padding: 0;
+            }
+            #tab1 tr th {
+                margin: 0;
+                padding: 0;
+            }
+            input[type='text']{
+                width: 98%;
+                height: 100%;
+                background-color: #ccffff;
+                border: 2px solid #444422;
+                border-radius: 3px;
+                text-align: right;
+            }
+        </style>
+        <script type="text/javascript">
+            var n;
+            function eval1(Calc){
+                n = eval(Calc.input.value);
+                Calc.input.value = n;
+            }
+            function f1(Calc){
+                Calc.input.value = "";
+            }
+        </script>
+    </head>
+    <body bgcolor=#ffffcc text=red>
+    <center>
+        <form action="" name="Calc">
+            <table id="tab1">
+                <tr>
+                    <th><input type="text" name="t1" style="text-align: center;background-color:#b8b894 ;color: #008080;padding: 8px 0;font-weight: bolder;" value="CASIO" size="17" /></th>
+                </tr>
+                <tr>
+                    <th><input type="text" name="input" size="17" /></th>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td><input type="button" name="one" value="1" onclick="Calc.input.value += '1'" /></td>
+                    <td><input type="button" name="two" value="2" onclick="Calc.input.value += '2'" /></td>
+                    <td><input type="button" name="three" value="3" onclick="Calc.input.value += '3'" /></td>
+                    <td><input type="button" name="plus" value=" +" onclick="Calc.input.value += '+'" /></td>
+                </tr>
+                <tr>
+                    <td><input type="button" name="four" value="4" onclick="Calc.input.value += '4'" /></td>
+                    <td><input type="button" name="five" value="5" onclick="Calc.input.value += '5'" /></td>
+                    <td><input type="button" name="six" value="6" onclick="Calc.input.value += '6'" /></td>
+                    <td><input type="button" name="minus" value=" -" onclick="Calc.input.value += ' - '" /></td>
+                </tr>
+                <tr>
+                    <td><input type="button" name="seven" value="7" onclick="Calc.input.value += '7'" /></td>
+                    <td><input type="button" name="eight" value="8" onclick="Calc.input.value += '8'" /></td>
+                    <td><input type="button" name="nine" value="9" onclick="Calc.input.value += '9'" /></td>
+                    <td><input type="button" name="intu" value=" x" onclick="Calc.input.value += '*'" /></td>
+                </tr>
+                <tr>
+                    <td><input type="button" name="point" value="." onclick="Calc.input.value += '.'" /></td>
+                    <td><input type="button" name="zero" value="0" onclick="Calc.input.value += '0'" /></td>
+                    <td><input type="button" name="nine" value="c" onclick="f1(this.form)" /></td>
+                    <td><input type="button" name="div" value=" /" onclick="Calc.input.value += '/'" /></td>
+                </tr>
+                <tr>
+                    <td><input type="button" name="bracket" value=" ( " onclick="Calc.input.value += '('" /></td>
+                    <td><input type="button" name="bracketr" value=" ) " onclick="Calc.input.value += ')'" /></td>
+                    <td><input type="button" name="percent" value="%" onclick="Calc.input.value += '%'" /></td>
+                    <td><input type="button" name="equal" value=" =" onclick="eval1(this.form)" /></td>
+                </tr>
+            </table>
+        </form>
+    </center>
+    </body>
+</html>

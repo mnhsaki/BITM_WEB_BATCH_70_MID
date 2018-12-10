@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <p>This example calls a function which performs a calculation returns the result</p>
+        <p id="demo"></p>
+        <p>Creating a javascript Object</p>
+        <p id="dimu"></p>
+        <p>The local variable cannot be accessed from code outside the function</p>
+        <p id="local"></p>
+        <p>A Global variable can be accessed from any script or function</p>
+        <p id="glob"></p>
+        <button onclick="document.getElementById('det').innerHTML = Date()">the time is?</button>
+        <button onclick="this.innerHTML = Date()">the time is?</button>
+        <p id="det"></p>
+        <script type="text/javascript">
+            function myFunction(x,y){
+                return x*y;
+            }
+            document.getElementById("demo").innerHTML = myFunction(3,4);
+            
+            
+            
+            var person = {
+                firstName:"john",
+                lastName:"Doe",
+                age:50,
+                eyeColor:"blue"
+            };
+            document.getElementById("dimu").innerHTML = 
+              person.firstName + " " + "is" + " " + person.age + " " +"years old and his eyecolor is " +
+              person.eyeColor;    
+      
+      
+      
+            myLocal();
+            
+            function myLocal(){
+                var carName = "hiace";
+                document.getElementById("local").innerHTML = "the type of Carname is " +  carName;
+            }
+            
+            
+            var carName = "Volvo";
+            myGlobal();
+            function myGlobal(){
+                document.getElementById("glob").innerHTML = "i can display "  + carName;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            #main{
+                width: 80%;
+            }
+            #main:after{
+                content: "";
+                display: table;
+                clear: both;
+            }
+            #item1{
+                width: 98%;
+                height: 150px;
+                background-color: #00cccc;
+            }
+            #item2,#item4{
+                width: 65%;
+                background-color: #00cccc;
+            }
+            #item4, #item5{
+                height: 100px;
+            }
+            #item2, #item3{
+                height: 300px;
+            }
+            #item3, #item5{
+                width: 30%;
+                background-color: #00cccc;
+            }
+            
+            #item1,#item2,#item3,#item4,#item5{
+                float: left;
+                margin: 1%;
+                
+            }
+            .blk{
+                height: 10px;
+                background-color: gray;
+            }
+        </style>
+        <script type="text/javascript">
+            
+            function remove2(){
+                document.getElementById('item2').style.display='none';
+            }
+            function show2(){
+                document.getElementById('item2').style.display='block';
+            }
+            function hide3(){
+                document.getElementById('item3').style.visibility='hidden';
+            }
+            function visible3(){
+                document.getElementById('item3').style.visibility='visible';
+            }
+            function reset(){
+                document.getElementById('item2').style.display='block';
+                document.getElementById('item3').style.visibility='visible';
+            }
+            
+        </script>
+        
+    </head>
+    <body>
+        <h2>What can javascript do?</h2>
+        <p id="demo">javascript can hide html documents</p>
+        <button type="button" onclick="document.getElementById('demo').style.innerHTML=(5+6)*10;">click me</button>
+        <hr />
+        <br />
+<!--        visibility='visible'
+        visibility='hidden'
+        display='none'
+        display='block'-->
+        <div id="main">
+            <div id="item1"></div>
+            <div id="item2"></div>
+            <div id="item3"></div>
+            <div id="item4"></div>
+            <div id="item5"></div>
+        </div>
+        
+        <div class="blk"></div>
+        <br />
+        <br />
+        <br />
+        <button onclick="remove2()">display-none</button>
+        <button onclick="show2()">display-block</button>
+        <button onclick="hide3()">disply-hidden</button>
+        <button onclick="visible3()">disply-visible</button>
+        <button onclick="reset()">reset</button>
+        <br />
+        <br />
+        <br />
+        <br />
+    </body>
+</html>

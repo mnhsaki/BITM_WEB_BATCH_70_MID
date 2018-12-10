@@ -1,0 +1,29 @@
+
+h2{ font-size: 20px; }
+h3{ font-size: 16px; }
+td{ padding: 10px;}
+table, tr, td { vertical-align: top;}
+.heder tr td { text-align: right; }
+.heder > tr > td { width: 70%; }
+table { width: 80%;margin: 0 auto;}
+table.nav { width: 100%; background-color: black;}
+table.ncont { width: 80%;margin: 0 auto; }
+table.ncont td { padding:0; }
+table.ncont a { text-decoration: none;white-space: nowrap;font-size:.8em; color:white;}
+table.cntnt { width: 80%;margin: 0 auto; }
+table.lt, table.rt,table.lt1,table.lt2 { width: 100%;}
+table.rt1{ width: 25%; }
+table.rt2{ width: 75%; }
+.lt2 img { width: 100%; }
+.rt2 div { background-color:#2373DB;margin: -10px -10px 0;}
+.rt2 div img { width: 60%; margin: 20px 40px;}
+img { width: 100%; }
+.bold{font-size: 12px;}
+table.vidbox{ background-color: black;padding-top: 20px;}
+table.vidbox h1{ background-color: rgba(255,255,255,.5);color: white;}
+table.vidbox h3{ background-color: rgba(255,255,255,.5);color: white;}
+table.pf { background-color: black;color: white;text-align: center;width: 100%;}
+table.footer{width: 80%;}
+table.footer h3{white-space: nowrap;}
+table.footer p{font-size: 12px;}
+table.footer img{ width: 20px;height: 20px;}

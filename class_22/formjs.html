@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            table{
+                border : 1px solid black;
+            }
+            td{
+                padding: 5px 8px;
+                border : 1px solid black;
+                height: 36px;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="">
+            first name : <input type="text" id="fninput" oninput="outputToTable()" />
+            last name : <input type="text" id="lninput" oninput="outputToTable2()" />
+        full name : <input type="text" id="fulninput" />
+        </form>
+        <hr />
+        <hr />
+        <table>
+            <tr>
+                <td>first name</td>
+                <td>last name</td>
+                <td>full name</td>
+            </tr>
+            <tr>
+                <td id="fname"></td>
+                <td id="lname"></td>
+                <td id="flname"></td>
+            </tr>
+        </table>
+        <script type="text/javascript">
+            
+            
+            
+            var x, y;
+            function outputToTable(){
+                var x = document.getElementById("fninput").value;
+                document.getElementById("fname").innerHTML = x;
+            }
+            function outputToTable2(){
+                var x = document.getElementById("lninput").value;
+                document.getElementById("lname").innerHTML = x;
+            }
+            
+            var xb = document.getElementById("fninput");
+            var yb = document.getElementById("lninput");
+            
+            xb.onblur = function(){
+                var x = document.getElementById("fninput").value;
+                var y = document.getElementById("lninput").value;
+                if (x == "" || y == ""){
+                    return false;
+                }
+                else {
+                    document.getElementById("flname").innerHTML = x + " " + y;
+                  return true;
+                }
+            };
+            
+            yb.onblur = function(){
+                var x = document.getElementById("fninput").value;
+                var y = document.getElementById("lninput").value;
+                if (x == "" || y == ""){
+                    return false;
+                }
+                else {
+                    document.getElementById("flname").innerHTML = x + " " + y;
+                  return true;
+                }
+            };     
+            
+        </script>
+    </body>
+</html>

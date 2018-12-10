@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+	<title>Slider</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel ="stylesheet" href="css/w3.css">
+	<style>
+	    .mySlides {display: none;}
+	</style>
+    </head>
+    <body>
+	<h2 class="w3-center">Slider</h2>
+	<div class="w3-content w3-display-container" style="margin-left:10%; margin-right: 10%;">
+	    <img alt="image" class="mySlides" src="image/slider-1.jpg" height="200" style="width: 100%"/> 
+	    <img alt="image" class="mySlides" src="image/slider-2.jpg" height="200" style="width: 100%"/> 
+	    <img alt="image" class="mySlides" src="image/slider-3.jpg" height="200" style="width: 100%"/> 
+	    <img alt="image" class="mySlides" src="image/slider-4.jpg" height="200" style="width: 100%"/> 
+	    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)" style="">&#10094;</button>
+	    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)" style="">&#10095;</button>
+	</div>
+	<script>
+	    var slideIndex = 1;
+	    showDivs(slideIndex);
+	    function plusDivs(n)
+	    {
+		showDivs(slideIndex += n);
+		//slideIndex += n; is equivalent to slideIndex = slideIndex + n;
+	    }
+	    function showDivs(n)
+	    {
+		var i;
+		var x = document.getElementsByClassName("mySlides");
+		if (n > x.length )
+		{
+		    slideIndex = 1;
+		}
+		if(n < 1)
+		{
+		    slideIndex = x.length;
+		}
+		for (i = 0; i < x.length; i++)
+		{
+		    x[i].style.display ="none";
+		}
+		x[slideIndex-1].style.display = "block";
+	    }
+	</script>
+        
+    </body>
+</html>

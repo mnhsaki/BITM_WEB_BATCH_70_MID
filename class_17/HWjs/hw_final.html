@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cart HW</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            /* div{
+                width: 30%;
+                border: 20px solid #750000;
+                margin: 100px;
+            } */
+        </style>
+    </head>
+    <body>
+        <div align="center">
+           <div class="product">
+            <legend><h1>Product</h1></legend>
+            <img src="https://www.trybuy.in/wp-content/uploads/2018/09/Exclusive-Black-Designer-Shirt.jpg" height="100">
+            <br/>
+            <button type="button" onClick="onClick3()">Black</button>
+            <span id="click3">0</span>
+            <br/><br/>
+            <img src="http://bikroay.com/pic/x/cache/big/files/bd/176/234de71520bf9c616642f50c02495627.jpg" height="100">
+            <br/>
+            <button type="button" onClick="onClick4()">White</button>
+            <span id="click4">0</span>
+            <br/><br/><hr/>
+           </div>
+            <div class="cart">
+                <h3>Cart:</h3>
+                <span id="sum">0</span>
+            <hr/>
+            </div>
+            
+            <script type="text/javascript">
+                var click3 = 0,
+                    click4 = 0;
+
+                function onClick3() {
+                    click3++;
+                    cart1 = click3 * 150;
+                    document.getElementById("click3").innerHTML = "Quantity: "+click3+". Price: "+cart1;
+                    calculateSum();
+                }
+                function onClick4() {
+                    click4++;
+                    cart2 = click4 * 100;
+                    document.getElementById("click4").innerHTML = "Quantity: "+click4+". Price: "+cart2;
+                    calculateSum();
+                }
+                function calculateSum() {
+                    document.getElementById("sum").innerHTML = "Total Quantity: "+(click3+click4)+". Total Price: "+(cart1+cart2);
+                }
+            </script>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #prmary_nav_wrap{
+                margin-top: 15px;
+            }
+            #prmary_nav_wrap ul{
+                list-style-type: none;
+                position: relative;
+                float: left;
+                margin: 0;
+                padding: 0;
+            }
+            #prmary_nav_wrap ul li{
+                position: relative;
+                float: left;
+                margin: 0;
+                padding: 0;
+            }
+            #prmary_nav_wrap ul a{
+                display: block;
+                color: #333;
+                text-decoration: none;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 32px;
+                padding: 0 15px;
+            }
+            #prmary_nav_wrap ul li:hover {
+                background-color: #33ff66;
+            }
+            #prmary_nav_wrap ul ul{
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background-color: #fff;
+                padding: 0;
+            }
+            #prmary_nav_wrap ul li:hover > ul{
+                display: block;
+            }
+            #prmary_nav_wrap ul ul li{
+                float: none;
+                width: 200px;
+            }
+            #prmary_nav_wrap ul ul a{
+                line-height: 120%;
+                padding: 10px 15px;
+            }
+            #prmary_nav_wrap ul ul ul{
+                top:0;
+                left: 100%;
+            }
+            
+            /*style*/
+            
+            #snav ul,#snav li{
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                position: relative;
+                float: left;
+            }
+            #snav ul a{
+                display: block;
+                padding: 15px 20px;
+                text-decoration: none;
+                
+                color: white;
+                line-height: 32px;
+            }
+            #snav ul li {
+                background-color: #333;
+            }
+            #snav ul li:hover {
+                background-color: #22cccc;
+            }
+            #snav ul ul {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+            }
+            #snav ul li:hover > ul{
+                display: block;
+            }
+            #snav ul ul li {
+                float: none;
+                width: 120px;
+            }
+            #snav ul ul ul{
+                top: 0;
+                left: -100%;
+            }
+        </style>
+    </head>
+    <body>
+        <nav id="prmary_nav_wrap">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu_1</a>
+                    <ul>
+                        <li><a href="#">Menu_1-1</a></li>
+                        <li><a href="#">Menu_1-2</a></li>
+                        <li><a href="#">Menu_1-3</a></li>
+                        <li><a href="#">Menu_1-4</a>
+                            <ul>
+                                <li><a href="#">sub_menu-1-4-1</a></li>  
+                                <li><a href="#">sub_menu-1-4-2</a></li>  
+                                <li><a href="#">sub_menu-1-4-3</a></li>  
+                                <li><a href="#">sub_menu-1-4-4</a></li>  
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Menu_2</a>
+                    <ul>
+                        <li><a href="#">menu2-1</a></li>
+                        <li><a href="#">menu2-2</a></li>
+                        <li><a href="#">menu2-3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Menu_3</a>
+                    <ul>
+                        <li><a href="#">menu-3-1</a></li>
+                        <li><a href="#">menu-3-2</a>
+                            <ul>
+                                <li><a href="#">sub_menu-3-2-1</a></li>
+                                <li><a href="#">sub_menu-3-2-2</a></li>
+                                <li><a href="#">sub_menu-3-2-3</a></li>
+                                <li><a href="#">sub_menu-3-2-4</a></li>
+                                <li><a href="#">sub_menu-3-2-5</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">menu-3-3</a></li>
+                        <li><a href="#">menu-3-4</a></li>
+                        <li><a href="#">menu-3-5</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Menu_4</a></li>
+                <li><a href="#">Menu_5</a></li>
+                <li><a href="#">Menu_6</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+        <p style="clear:both;"></p>
+        <hr/>
+        <div style="height: 100px;background-color: #116;"></div>
+        
+        <nav id="snav">
+            <ul>
+                <li><a href="#">menu</a></li>
+                <li><a href="#">menu</a></li>
+                <li><a href="#">menu</a>
+                    <ul>
+                        <li><a href="#">sub_menu</a></li>
+                        <li><a href="#">sub_menu</a>
+                            <ul>
+                                <li><a href="#">sub_sub_menu</a></li>
+                                <li><a href="#">sub_sub_menu</a></li>
+                                <li><a href="#">sub_sub_menu</a></li>
+                                <li><a href="#">sub_sub_menu</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">sub_menu</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">menu</a></li>
+            </ul>
+        </nav>
+    </body>
+</html>

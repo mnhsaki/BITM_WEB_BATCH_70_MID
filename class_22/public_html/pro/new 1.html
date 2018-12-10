@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>#SEID-212938</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+        body{
+        	background-color: teal;
+        }
+        .flot{ float: left; }
+        .main{
+        	width: 960px;
+        	background-color: wheat;
+        	margin: 0 auto;
+        	padding: 10px;
+        }
+        .header{ height: 200px; }
+        .head1{ width: 220px; border: 1px solid black; height: 136px;  padding: 70px 10px 10px;}
+        .head2{ width: 696px; border: 1px solid black; height: 196px; padding: 10px 10px;}
+        .nav{ height: 60px; }
+        .nav2{ border: 1px solid black; width: 180px; height: 14px; padding:2px 5px;}
+        .cntndiv{ height: 658px; } /*858px */
+        .laside{ height: auto; width: 230px; border: 1px solid black; padding-left: 10px;} /*860px*/
+        .laside a{text-decoration: none;color: teal; }
+        .laside ul li {list-style: none;line-height: 2em;}
+        .maside{ height: auto; width: 454px; border: 1px solid black; padding: 0 10px;}
+        .raside{ height: auto; width: 230px; border: 1px solid black; padding-right: 10px;}
+        .footer{ height: 200px; }
+        .f1{ border: 1px solid black; height: 178px; width: 240px; padding: 10px 0 10px 10px; }
+        .f2{ border: 1px solid black; height: 178px; width: 434px; padding: 10px 10px }
+        .f3{ border: 1px solid black; height: 178px; width: 240px; padding: 10px 10px 10px 0;}
+
+
+        </style>
+    </head>
+    <body>
+ 
+      <div class="main">
+      	<div class="header">
+      		<div class="flot head1"><img src="image/bitm.png" alt="icon" ></div>
+      		<div class="flot head2"><img src="image/webl.jpg" alt="image" height="196" width="696"></div>
+      	</div>
+      	<div class="nav">
+      		<div class="flot nav2"><a href="#">home</a></div>
+      		<div class="flot nav2"><a href="#">gallery</a></div>
+      		<div class="flot nav2"><a href="#">control</a></div>
+      		<div class="flot nav2"><a href="#">service</a></div>
+      		<div class="flot nav2"><a href="#">about</a></div>
+      	</div>
+      	<div class="cntndiv">
+      		<div class="laside flot">
+      			ALL COURSE
+                     <ul>
+                         <li>Web <ul><li><a href="#">php essential</a></li>
+                         <li><a href="#">php advanced</a></li>
+                         <li><a href="#">python essential</a></li>
+                         <li><a href="#">python advanced</a></li>
+                         </ul></li>
+                         <li><a href="#">Digital marketing</a></li>
+                         <li>Network
+                         <ul>
+                             <li><a href="#">ccna</a></li>
+                             <li><a href="#">Wireless technology</a></li>
+                         </ul></li>
+                         <li><a href="#">C# essential programming</a></li>
+                         <li><a href="#">certified ethical hacker</a></li>
+                         <li><a href="#">software testing</a></li>
+                         <li><a href="#">software design and architecture</a></li>
+                         <li><a href="#">java essential</a></li>
+                         <li><a href="#">android application essential</a></li>
+                         <li><a href="#">android application advanced</a></li>
+                     </ul>
+      		</div>
+      		<div class="maside flot">
+      			<form><fieldset> <legend>STUDENT ENROLLMENT FORM</legend><table>
+                        
+                         <tr>
+                             <td>STUDENT NAME </td>
+                             <td width="40"></td>
+                             <td>: <input type="text" name="firstname" value="first name"> <input type="text" name="lastname" value="last name"></td>
+                         </tr>
+                         <tr>
+                             <td>FATHER'S NAME</td>
+                             <td></td>
+                             <td>: <input type="text" name="fathername"></td>
+                         </tr>
+                         <tr>
+                             <td>GENDER </td>
+                             <td></td>
+                             <td>: <input type="radio" name="male" value="male">male<br/>
+                                 <input type="radio" name="female" value="female">female<br/>
+                                 <input type="radio" name="other" value="other">other</td>
+                         </tr>
+                         <tr>
+                             <td>DATE OF BIRTH </td>
+                             <td></td>
+                             <td>: <input type="date"> </td>
+                         </tr>
+                         <tr>
+                             <td>ABOUT YOURSELF </td>
+                             <td></td>
+                             <td>: <textarea></textarea></td>
+                         </tr>
+                         <tr>
+                             <td>UPLOAD PHOTO </td>
+                             <td></td>
+                             <td> : <input type="file" name="image"></td>
+                         </tr>
+                         <tr>
+                             <td>UPLOAD CV </td>
+                             <td></td>
+                             <td>: <input type="file" name="cv"></td>
+                         </tr>
+                         <tr>
+                             <td colspan="3"><br/><input type="submit" value="submit"></td>
+                         </tr>
+                     </table> </fieldset></form>
+      		</div>
+      		<div class="raside flot">
+      			<table>
+                 <tr>
+                     <td>FEATURED COURSE <br/><br/></td>
+                 </tr>
+                 <tr>
+                     <td><img src="image/c.png" alt="c#picture" width="200" height="100"><a href="#">C# Essential Programming with Desktop App Development</a></td>
+                 </tr>
+                 <tr>
+                     <td><img src="image/p.png" alt="pythonpicture" width="200" height="100"><a href="#">Advance Python 3 Programming</a></td>
+                         <td></td>
+                 </tr>
+                 <tr>
+                     <td><img src="image/cc.jpg" alt="ccnapicture" width="200" height="100"><a href="#">Cisco Certified Network Associate (CCNA)</a></td>
+                 </tr>
+                     
+                 </table>
+      		</div>
+      	</div>
+      	<div class="footer">
+      		<div class="flot f1"><p>Address: <br/>3rd floor, BDBL Bhaban, East 12, Dhaka 1215<br/>
+                             Phone: 09612-342486</p></div>
+      		<div class="flot f2"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7491851.673217344!2d88.09974044576194!3d23.52780109410291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8bd552c2b3b%3A0x4e70f117856f0c22!2sBASIS+Institute+of+Technology+%26+Management+(BITM)!5e0!3m2!1sen!2sbd!4v1539458020106" width="434" height="178" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+      		<div class="flot f3"><p>Copyright © BITM 2018</p></div>
+      	</div>
+      </div>
+
+    </body>
+</html>
